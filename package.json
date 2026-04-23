@@ -1,0 +1,36 @@
+{
+  "name": "hourlyiq",
+  "version": "0.0.1",
+  "description": "HourlyIQ - freelancer invoice tracker",
+  "private": true,
+  "scripts": {
+    "start:dev": "nest start --watch && cd frontend && npm run dev",
+    "build": "nest build && npm run build:frontend",
+    "start": "node dist/main",
+    "build:frontend": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/serve-static": "^4.0.0",
+    "@nestjs/typeorm": "^10.0.0",
+    "better-sqlite3": "^9.4.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.0.0",
+    "@nestjs/schematics": "^10.0.0",
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.0.0",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.3"
+  }
+}
