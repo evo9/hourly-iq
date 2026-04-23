@@ -67,7 +67,7 @@ function ClientSummaryBar({ client, invoices, payments, invoiceFilter, paymentFi
             </span>
             {carriedDebt > 0 && invoiceFilter.from && (
               <span className="text-gray-500">
-                Попередній період:{' '}
+                Перенесений борг:{' '}
                 <span className="font-semibold text-red-600">- {formatMoney(carriedDebt, currency)}</span>
               </span>
             )}
